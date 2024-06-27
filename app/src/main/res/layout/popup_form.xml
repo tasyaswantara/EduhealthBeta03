@@ -43,16 +43,18 @@
             android:text="LINK"
             android:textSize="12dp"
             tools:ignore="TextSizeCheck" />
+
         <EditText
             android:id="@+id/edit_link"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="5dp"
-            android:paddingHorizontal="10dp"
-            android:hint="https://img.youtube.."
-            android:textSize="14sp"
             android:background="@drawable/input_shape"
-            android:minHeight="38dp"/>
+            android:hint="https://img.youtube.."
+            android:minHeight="38dp"
+            android:paddingHorizontal="10dp"
+            android:textSize="14sp"
+            tools:ignore="TouchTargetSizeCheck" />
 
         <TextView
             android:layout_width="wrap_content"
@@ -62,16 +64,18 @@
             android:text="JUDUL"
             android:textSize="12dp"
             tools:ignore="TextSizeCheck" />
+
         <EditText
             android:id="@+id/edit_judul"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="5dp"
+            android:background="@drawable/input_shape"
+            android:hint="judul"
+            android:minHeight="38dp"
             android:paddingHorizontal="10dp"
             android:textSize="14sp"
-            android:hint="judul"
-            android:background="@drawable/input_shape"
-            android:minHeight="38dp"/>
+            tools:ignore="TouchTargetSizeCheck" />
     </LinearLayout>
     <TextView
         android:id="@+id/btn_confirm"
