@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".RekamJejakActivity"
+    >
+    <LinearLayout
+        android:id="@+id/rekamJejak_section1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="30dp"
+        android:paddingHorizontal="20dp">
+
+        <ImageView
+            android:id="@+id/btn_back"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_gravity="center_vertical"
+            android:src="@drawable/arrow_left"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Rekam Jejak"
+            android:fontFamily="@font/poppinsbold"
+            android:textSize="24dp"
+            android:layout_weight="1"
+            android:textAlignment="textEnd"/>
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/rekamJejak_section2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/rekamJejak_section1"
+        android:orientation="horizontal"
+        android:layout_marginTop="20dp"
+        android:gravity="center"
+        android:paddingHorizontal="20dp">
+
+        <TextView
+            android:id="@+id/rekam_opsi1"
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/background_blue"
+            android:gravity="center"
+            android:padding="10dp"
+            android:text="Antropometri dan Status Gizi"
+            android:textSize="12sp"
+            />
+        <TextView
+            android:id="@+id/rekam_opsi2"
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"
+            android:text="Skrining Anemia"
+            android:gravity="center"
+            android:background="@drawable/input_shape"
+            android:padding="10dp"
+            android:layout_weight="1"
+            android:layout_marginStart="10dp"
+            android:textSize="12sp"
+            android:minHeight="50dp"
+            android:textColor="@color/gray"/>
+        <TextView
+            android:id="@+id/rekam_opsi3"
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"
+            android:text="Pantau Sakit"
+            android:gravity="center"
+            android:background="@drawable/input_shape"
+            android:padding="10dp"
+            android:layout_weight="1"
+            android:layout_marginStart="10dp"
+            android:textSize="12sp"
+            android:minHeight="50dp"
+            android:textColor="@color/gray"/>
+    </LinearLayout>
+    <FrameLayout
+        android:id="@+id/rekamJejak_section3"
+        android:layout_below="@+id/rekamJejak_section2"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="30dp"
+        android:paddingHorizontal="20dp">
+
+
+    </FrameLayout>
+
+
+</RelativeLayout>

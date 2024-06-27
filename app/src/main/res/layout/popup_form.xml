@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="350dp"
+    android:layout_height="290dp"
+    android:layout_gravity="center"
+    android:background="@drawable/radius_shape"
+    android:backgroundTint="@color/white"
+    android:paddingHorizontal="30dp"
+    android:paddingVertical="25dp"
+    >
+    <LinearLayout
+        android:id="@+id/popup_section1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Tambahan Video\nKesehatan"
+            android:fontFamily="@font/poppinsbold"
+            android:textSize="20dp"
+            android:layout_weight="1"/>
+        <ImageView
+            android:id="@+id/btn_close"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/icon_cross"/>
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/popup_section2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/popup_section1"
+        android:layout_marginTop="5dp"
+        android:orientation="vertical"
+        >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/interregular"
+            android:text="LINK"
+            android:textSize="12dp"
+            tools:ignore="TextSizeCheck" />
+        <EditText
+            android:id="@+id/edit_link"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:paddingHorizontal="10dp"
+            android:hint="https://img.youtube.."
+            android:background="@drawable/input_shape"
+            android:minHeight="38dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:fontFamily="@font/interregular"
+            android:text="JUDUL"
+            android:textSize="12dp"
+            tools:ignore="TextSizeCheck" />
+        <EditText
+            android:id="@+id/edit_judul"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:paddingHorizontal="10dp"
+            android:hint="judul"
+            android:background="@drawable/input_shape"
+            android:minHeight="38dp"/>
+    </LinearLayout>
+    <TextView
+        android:id="@+id/btn_confirm"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:text="Tambah"
+        android:gravity="center"
+        android:background="@drawable/input_shape"
+        android:backgroundTint="@color/orange"
+        android:textColor="@color/white"
+        android:minHeight="34dp"
+        android:fontFamily="@font/intermedium"/>
+
+</RelativeLayout>
