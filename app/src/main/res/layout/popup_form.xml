@@ -50,6 +50,7 @@
             android:layout_marginTop="5dp"
             android:paddingHorizontal="10dp"
             android:hint="https://img.youtube.."
+            android:textSize="14sp"
             android:background="@drawable/input_shape"
             android:minHeight="38dp"/>
 
@@ -67,6 +68,7 @@
             android:layout_height="wrap_content"
             android:layout_marginTop="5dp"
             android:paddingHorizontal="10dp"
+            android:textSize="14sp"
             android:hint="judul"
             android:background="@drawable/input_shape"
             android:minHeight="38dp"/>

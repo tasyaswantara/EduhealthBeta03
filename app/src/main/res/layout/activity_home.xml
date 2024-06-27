@@ -126,6 +126,7 @@
         android:orientation="horizontal">
         <!--    part 1-->
         <LinearLayout
+            android:id="@+id/btn_qna"
             android:layout_width="160dp"
             android:layout_height="190dp"
             android:background="@drawable/radius_shape"

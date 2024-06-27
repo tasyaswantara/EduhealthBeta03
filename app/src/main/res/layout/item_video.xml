@@ -46,7 +46,7 @@
                 android:layout_width="24dp"
                 android:layout_height="24dp"
                 android:src="@drawable/img_delete"
-                android:layout_marginStart="20dp"
+                android:layout_marginStart="10dp"
                 />
             </LinearLayout>
 
