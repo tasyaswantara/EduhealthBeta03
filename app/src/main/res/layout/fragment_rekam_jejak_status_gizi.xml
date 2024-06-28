@@ -58,6 +58,7 @@
 
                 <EditText
                     android:id="@+id/input_bb"
+                    android:inputType="number"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:background="@drawable/input_shape"
@@ -81,6 +82,7 @@
                     android:id="@+id/input_tb"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
+                    android:inputType="number"
                     android:background="@drawable/input_shape"
                     android:minHeight="42dp"
                     android:paddingHorizontal="10dp"

@@ -51,6 +51,7 @@
             android:layout_height="wrap_content"
             android:background="@drawable/input_shape"
             android:minHeight="42dp"
+            android:inputType="number"
             android:paddingHorizontal="10dp"
             tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck" />
 
