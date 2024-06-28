@@ -1,27 +1,33 @@
 
 package com.example.eduhealthbeta03;
 
-import android.animation.LayoutTransition;
+
+import android.annotation.SuppressLint;
 import android.content.Intent;
 import android.os.Bundle;
-import android.transition.AutoTransition;
-import android.transition.TransitionManager;
+
 import android.view.View;
 import android.widget.ImageView;
-import android.widget.LinearLayout;
-import android.widget.TextView;
+
 
 import androidx.activity.EdgeToEdge;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.core.graphics.Insets;
 import androidx.core.view.ViewCompat;
 import androidx.core.view.WindowInsetsCompat;
+import androidx.recyclerview.widget.LinearLayoutManager;
+import androidx.recyclerview.widget.RecyclerView;
+
+import java.util.ArrayList;
 
 public class QnaActivity extends AppCompatActivity {
-    private TextView detail;
-    private LinearLayout layout;
-    private ImageView btn_back;
 
+    private ImageView btn_back;
+    private RecyclerView qna_recyclerView;
+    private QnaAdapter qnaAdapter;
+    private ArrayList<Qna> qnaArrayList;
+
+    @SuppressLint("MissingInflatedId")
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -32,8 +38,14 @@ public class QnaActivity extends AppCompatActivity {
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom);
             return insets;
         });
-        detail=findViewById(R.id.detail);
-        layout=findViewById(R.id.qna_layout);
+
+        getData();
+        qna_recyclerView = findViewById(R.id.qna_recyclerview);
+        qnaAdapter= new QnaAdapter(qnaArrayList);
+        RecyclerView.LayoutManager layoutManager = new LinearLayoutManager(QnaActivity.this);
+        qna_recyclerView.setLayoutManager(layoutManager);
+        qna_recyclerView.setAdapter(qnaAdapter);
+
         btn_back=findViewById(R.id.btn_back);
         btn_back.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -44,13 +56,18 @@ public class QnaActivity extends AppCompatActivity {
 
             }
         });
-        layout.getLayoutTransition().enableTransitionType(LayoutTransition.CHANGING);
+
+    }
+    public void getData(){
+        qnaArrayList = new ArrayList<>();
+        qnaArrayList.add(new Qna("Ini merupakan contoh pertanyaan tentang aplikasi ini ?","Ini merupakan contoh Jawaban tentang aplikasi ini. Gatau benar atau tidak yang penting dijawab saja ya."));
+        qnaArrayList.add(new Qna("Ini merupakan contoh pertanyaan kedua","Ini merupakan contoh Jawaban tentang aplikasi ini. Gatau benar atau tidak yang penting dijawab saja ya."));
+        qnaArrayList.add(new Qna("Ini merupakan contoh pertanyaan ketiga","Ini merupakan contoh Jawaban tentang aplikasi ini. Gatau benar atau tidak yang penting dijawab saja ya."));
+        qnaArrayList.add(new Qna("Ini merupakan contoh pertanyaan keempat","Ini merupakan contoh Jawaban tentang aplikasi ini. Gatau benar atau tidak yang penting dijawab saja ya."));
+        qnaArrayList.add(new Qna("Ini merupakan contoh pertanyaan kelima","Ini merupakan contoh Jawaban tentang aplikasi ini. Gatau benar atau tidak yang penting dijawab saja ya."));
+        qnaArrayList.add(new Qna("Ini merupakan contoh pertanyaan keenam bang","Ini merupakan contoh Jawaban tentang aplikasi ini. Gatau benar atau tidak yang penting dijawab saja ya."));
+
+
     }
 
-    public void expand(View view) {
-        int v =(detail.getVisibility() == View.GONE)? View.VISIBLE : View.GONE;
-        TransitionManager.beginDelayedTransition(layout, new AutoTransition());
-
-        detail.setVisibility(v);
-    }
 }

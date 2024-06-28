@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:outlineSpotShadowColor="@color/blue"
+    android:onClick="expand"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    app:cardCornerRadius="20dp"
+    app:cardElevation="10dp"
+    app:contentPadding="20dp"
+    android:layout_marginHorizontal="20dp"
+    android:layout_marginVertical="5dp"
+    android:backgroundTint="@color/lightblue">
+
+        <LinearLayout
+            android:id="@+id/qna_layout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:animateLayoutChanges="true">
+            <TextView
+                android:id="@+id/txt_question"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Ini merupakan contoh pertanyaan tentang aplikasi ini ?"
+                android:fontFamily="@font/poppinsbold"
+                android:textSize="16sp"/>
+            <TextView
+                android:id="@+id/detail"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:visibility="gone"
+                android:fontFamily="@font/interregular"
+                android:layout_marginTop="16dp"
+                android:text="Ini merupakan contoh Jawaban tentang aplikasi ini. Gatau benar atau tidak yang penting dijawab saja ya."/>
+
+        </LinearLayout>
+
+
+</androidx.cardview.widget.CardView>
