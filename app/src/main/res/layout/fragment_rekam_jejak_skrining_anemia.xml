@@ -13,439 +13,611 @@
         android:layout_height="wrap_content"
         android:orientation="vertical">
 
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="horizontal"
-            android:minHeight="48dp"
-            >
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="5 L (lemah, letih, lesu,\nlelah, lalai)"
-                android:layout_gravity="center"
-                android:layout_weight="1"
-                android:textSize="14sp"/>
-        <RadioGroup
-            android:id="@+id/radio_group_1"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:orientation="horizontal">
 
-                <RadioButton
-                    android:id="@+id/radio_button_iya_1"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:background="@drawable/input_shape"
-                    android:paddingHorizontal="10dp"
-                    android:text="Iya"
-
-                    />
-
-
-
-                <RadioButton
-                    android:id="@+id/radio_button_tidak_1"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:background="@drawable/input_shape"
-                    android:backgroundTint="@color/pink"
-
-                    android:layout_marginStart="10dp"
-                    android:paddingHorizontal="10dp"
-                    android:text="Tidak"
-
-
-                    />
-
-        </RadioGroup>
-
-        </LinearLayout>
-        <View
-            android:layout_width="match_parent"
-            android:layout_height="1dp"
-            android:background="@color/gray"
-            android:layout_marginVertical="10dp"/>
 
 
 <!--        mulai sini-->
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="horizontal"
-            android:minHeight="48dp"
-            >
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="5 L (lemah, letih, lesu,\nlelah, lalai)"
-                android:layout_gravity="center"
-                android:layout_weight="1"
-                android:textSize="14sp"/>
-            <RadioGroup
-                android:id="@+id/radio_group_1"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:orientation="horizontal">
 
-                <RadioButton
-                    android:id="@+id/radio_button_iya_1"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:background="@drawable/input_shape"
-                    android:paddingHorizontal="10dp"
-                    android:text="Iya"
-
-                    />
-
-
-
-                <RadioButton
-                    android:id="@+id/radio_button_tidak_1"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:background="@drawable/input_shape"
-                    android:backgroundTint="@color/pink"
-
-                    android:layout_marginStart="10dp"
-                    android:paddingHorizontal="10dp"
-                    android:text="Tidak"
-
-
-                    />
-
-            </RadioGroup>
-
-        </LinearLayout>
-        <View
-            android:layout_width="match_parent"
-            android:layout_height="1dp"
-            android:background="@color/gray"
-            android:layout_marginVertical="10dp"/>
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="horizontal"
-            android:minHeight="48dp"
-            >
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="5 L (lemah, letih, lesu,\nlelah, lalai)"
-                android:layout_gravity="center"
-                android:layout_weight="1"
-                android:textSize="14sp"/>
-            <RadioGroup
-                android:id="@+id/radio_group_1"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:orientation="horizontal">
-
-                <RadioButton
-                    android:id="@+id/radio_button_iya_1"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:background="@drawable/input_shape"
-                    android:paddingHorizontal="10dp"
-                    android:text="Iya"
-
-                    />
-
-
-
-                <RadioButton
-                    android:id="@+id/radio_button_tidak_1"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:background="@drawable/input_shape"
-                    android:backgroundTint="@color/pink"
-
-                    android:layout_marginStart="10dp"
-                    android:paddingHorizontal="10dp"
-                    android:text="Tidak"
-
-
-                    />
-
-            </RadioGroup>
-
-        </LinearLayout>
-        <View
-            android:layout_width="match_parent"
-            android:layout_height="1dp"
-            android:background="@color/gray"
-            android:layout_marginVertical="10dp"/>
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="horizontal"
-            android:minHeight="48dp"
-            >
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="5 L (lemah, letih, lesu,\nlelah, lalai)"
-                android:layout_gravity="center"
-                android:layout_weight="1"
-                android:textSize="14sp"/>
-            <RadioGroup
-                android:id="@+id/radio_group_1"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:orientation="horizontal">
-
-                <RadioButton
-                    android:id="@+id/radio_button_iya_1"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:background="@drawable/input_shape"
-                    android:paddingHorizontal="10dp"
-                    android:text="Iya"
-
-                    />
-
-
-
-                <RadioButton
-                    android:id="@+id/radio_button_tidak_1"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:background="@drawable/input_shape"
-                    android:backgroundTint="@color/pink"
-
-                    android:layout_marginStart="10dp"
-                    android:paddingHorizontal="10dp"
-                    android:text="Tidak"
-
-
-                    />
-
-            </RadioGroup>
-
-        </LinearLayout>
-        <View
-            android:layout_width="match_parent"
-            android:layout_height="1dp"
-            android:background="@color/gray"
-            android:layout_marginVertical="10dp"/>
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="horizontal"
-            android:minHeight="48dp"
-            >
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="5 L (lemah, letih, lesu,\nlelah, lalai)"
-                android:layout_gravity="center"
-                android:layout_weight="1"
-                android:textSize="14sp"/>
-            <RadioGroup
-                android:id="@+id/radio_group_1"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:orientation="horizontal">
-
-                <RadioButton
-                    android:id="@+id/radio_button_iya_1"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:background="@drawable/input_shape"
-                    android:paddingHorizontal="10dp"
-                    android:text="Iya"
-
-                    />
-
-
-
-                <RadioButton
-                    android:id="@+id/radio_button_tidak_1"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:background="@drawable/input_shape"
-                    android:backgroundTint="@color/pink"
-
-                    android:layout_marginStart="10dp"
-                    android:paddingHorizontal="10dp"
-                    android:text="Tidak"
-
-
-                    />
-
-            </RadioGroup>
-
-        </LinearLayout>
-        <View
-            android:layout_width="match_parent"
-            android:layout_height="1dp"
-            android:background="@color/gray"
-            android:layout_marginVertical="10dp"/>
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="horizontal"
-            android:minHeight="48dp"
-            >
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="5 L (lemah, letih, lesu,\nlelah, lalai)"
-                android:layout_gravity="center"
-                android:layout_weight="1"
-                android:textSize="14sp"/>
-            <RadioGroup
-                android:id="@+id/radio_group_1"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:orientation="horizontal">
-
-                <RadioButton
-                    android:id="@+id/radio_button_iya_1"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:background="@drawable/input_shape"
-                    android:paddingHorizontal="10dp"
-                    android:text="Iya"
-
-                    />
-
-
-
-                <RadioButton
-                    android:id="@+id/radio_button_tidak_1"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:background="@drawable/input_shape"
-                    android:backgroundTint="@color/pink"
-
-                    android:layout_marginStart="10dp"
-                    android:paddingHorizontal="10dp"
-                    android:text="Tidak"
-
-
-                    />
-
-            </RadioGroup>
-
-        </LinearLayout>
-        <View
-            android:layout_width="match_parent"
-            android:layout_height="1dp"
-            android:background="@color/gray"
-            android:layout_marginVertical="10dp"/>
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="horizontal"
-            android:minHeight="48dp"
-            >
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="5 L (lemah, letih, lesu,\nlelah, lalai)"
-                android:layout_gravity="center"
-                android:layout_weight="1"
-                android:textSize="14sp"/>
-            <RadioGroup
-                android:id="@+id/radio_group_1"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:orientation="horizontal">
-
-                <RadioButton
-                    android:id="@+id/radio_button_iya_1"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:background="@drawable/input_shape"
-                    android:paddingHorizontal="10dp"
-                    android:text="Iya"
-
-                    />
-
-
-
-                <RadioButton
-                    android:id="@+id/radio_button_tidak_1"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:background="@drawable/input_shape"
-                    android:backgroundTint="@color/pink"
-
-                    android:layout_marginStart="10dp"
-                    android:paddingHorizontal="10dp"
-                    android:text="Tidak"
-
-
-                    />
-
-            </RadioGroup>
-
-        </LinearLayout>
-        <View
-            android:layout_width="match_parent"
-            android:layout_height="1dp"
-            android:background="@color/gray"
-            android:layout_marginVertical="10dp"/>
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="horizontal"
-            android:minHeight="48dp"
-            >
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="5 L (lemah, letih, lesu,\nlelah, lalai)"
-                android:layout_gravity="center"
-                android:layout_weight="1"
-                android:textSize="14sp"/>
-            <RadioGroup
-                android:id="@+id/radio_group_1"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:orientation="horizontal">
-
-                <RadioButton
-                    android:id="@+id/radio_button_iya_1"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:background="@drawable/input_shape"
-                    android:paddingHorizontal="10dp"
-                    android:text="Iya"
-
-                    />
-
-
-
-                <RadioButton
-                    android:id="@+id/radio_button_tidak_1"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:background="@drawable/input_shape"
-                    android:backgroundTint="@color/pink"
-
-                    android:layout_marginStart="10dp"
-                    android:paddingHorizontal="10dp"
-                    android:text="Tidak"
-
-
-                    />
-
-            </RadioGroup>
-
-        </LinearLayout>
-        <View
-            android:layout_width="match_parent"
-            android:layout_height="1dp"
-            android:background="@color/gray"
-            android:layout_marginVertical="10dp"/>
 <!--        ampe sini-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:minHeight="48dp"
+            >
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="5 L (lemah, letih, lesu,\nlelah, lalai)"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:textSize="14sp"/>
+
+
+                <CheckBox
+                    android:id="@+id/checkbox1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/input_shape"
+                    android:paddingHorizontal="10dp"
+                    android:text="Iya"
+
+                    />
 
 
 
+                <CheckBox
+                    android:id="@+id/checkbox2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/input_shape"
+                    android:backgroundTint="@color/pink"
 
+                    android:layout_marginStart="10dp"
+                    android:paddingHorizontal="10dp"
+                    android:text="Tidak"
+
+
+                    />
+
+
+
+        </LinearLayout>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/gray"
+            android:layout_marginVertical="10dp"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:minHeight="48dp"
+            >
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:text="Sakit kepala dan pusing"
+                android:textSize="14sp" />
+
+            <CheckBox
+                android:id="@+id/checkbox3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/input_shape"
+                android:paddingHorizontal="10dp"
+                android:text="Iya"
+
+                />
+
+
+
+            <CheckBox
+                android:id="@+id/checkbox4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/input_shape"
+                android:backgroundTint="@color/pink"
+
+                android:layout_marginStart="10dp"
+                android:paddingHorizontal="10dp"
+                android:text="Tidak"
+
+
+                />
+
+
+
+        </LinearLayout>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/gray"
+            android:layout_marginVertical="10dp"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:minHeight="48dp"
+            >
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Mata berkunang-kunang"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:textSize="14sp"/>
+
+
+            <CheckBox
+                android:id="@+id/checkbox5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/input_shape"
+                android:paddingHorizontal="10dp"
+                android:text="Iya"
+
+                />
+
+
+
+            <CheckBox
+                android:id="@+id/checkbox6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/input_shape"
+                android:backgroundTint="@color/pink"
+                android:layout_marginStart="10dp"
+                android:paddingHorizontal="10dp"
+                android:text="Tidak"
+
+
+                />
+
+
+
+        </LinearLayout>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/gray"
+            android:layout_marginVertical="10dp"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:minHeight="48dp"
+            >
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Mudah mengantuk"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:textSize="14sp"/>
+
+
+            <CheckBox
+                android:id="@+id/checkbox7"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/input_shape"
+                android:paddingHorizontal="10dp"
+                android:text="Iya"
+
+                />
+
+
+
+            <CheckBox
+                android:id="@+id/checkbox8"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/input_shape"
+                android:backgroundTint="@color/pink"
+                android:layout_marginStart="10dp"
+                android:paddingHorizontal="10dp"
+                android:text="Tidak"
+
+
+                />
+
+
+
+        </LinearLayout>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/gray"
+            android:layout_marginVertical="10dp"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:minHeight="48dp"
+            >
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Cepat capek"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:textSize="14sp"/>
+
+
+            <CheckBox
+                android:id="@+id/checkbox9"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/input_shape"
+                android:paddingHorizontal="10dp"
+                android:text="Iya"
+
+                />
+
+
+
+            <CheckBox
+                android:id="@+id/checkbox10"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/input_shape"
+                android:backgroundTint="@color/pink"
+                android:layout_marginStart="10dp"
+                android:paddingHorizontal="10dp"
+                android:text="Tidak"
+
+
+                />
+
+
+
+        </LinearLayout>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/gray"
+            android:layout_marginVertical="10dp"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:minHeight="48dp"
+            >
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Sulit berkonsentrasi"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:textSize="14sp"/>
+
+
+            <CheckBox
+                android:id="@+id/checkbox11"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/input_shape"
+                android:paddingHorizontal="10dp"
+                android:text="Iya"
+
+                />
+
+
+
+            <CheckBox
+                android:id="@+id/checkbox12"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/input_shape"
+                android:backgroundTint="@color/pink"
+                android:layout_marginStart="10dp"
+                android:paddingHorizontal="10dp"
+                android:text="Tidak"
+
+
+                />
+
+
+
+        </LinearLayout>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/gray"
+            android:layout_marginVertical="10dp"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:minHeight="48dp"
+            >
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Pucat pada muka"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:textSize="14sp"/>
+
+
+            <CheckBox
+                android:id="@+id/checkbox13"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/input_shape"
+                android:paddingHorizontal="10dp"
+                android:text="Iya"
+
+                />
+
+
+
+            <CheckBox
+                android:id="@+id/checkbox14"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/input_shape"
+                android:backgroundTint="@color/pink"
+                android:layout_marginStart="10dp"
+                android:paddingHorizontal="10dp"
+                android:text="Tidak"
+
+
+                />
+
+
+
+        </LinearLayout>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/gray"
+            android:layout_marginVertical="10dp"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:minHeight="48dp"
+            >
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Pucat pada telapak tangan"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:textSize="14sp"/>
+
+
+            <CheckBox
+                android:id="@+id/checkbox15"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/input_shape"
+                android:paddingHorizontal="10dp"
+                android:text="Iya"
+
+                />
+
+
+
+            <CheckBox
+                android:id="@+id/checkbox16"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/input_shape"
+                android:backgroundTint="@color/pink"
+                android:layout_marginStart="10dp"
+                android:paddingHorizontal="10dp"
+                android:text="Tidak"
+
+
+                />
+
+
+
+        </LinearLayout>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/gray"
+            android:layout_marginVertical="10dp"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:minHeight="48dp"
+            >
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Pucat pada kelopak mata"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:textSize="14sp"/>
+
+
+            <CheckBox
+                android:id="@+id/checkbox17"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/input_shape"
+                android:paddingHorizontal="10dp"
+                android:text="Iya"
+
+                />
+
+
+
+            <CheckBox
+                android:id="@+id/checkbox18"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/input_shape"
+                android:backgroundTint="@color/pink"
+                android:layout_marginStart="10dp"
+                android:paddingHorizontal="10dp"
+                android:text="Tidak"
+
+
+                />
+
+
+
+        </LinearLayout>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/gray"
+            android:layout_marginVertical="10dp"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:minHeight="48dp"
+            >
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Pucat pada bibir"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:textSize="14sp"/>
+
+
+            <CheckBox
+                android:id="@+id/checkbox19"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/input_shape"
+                android:paddingHorizontal="10dp"
+                android:text="Iya"
+
+                />
+
+
+
+            <CheckBox
+                android:id="@+id/checkbox20"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/input_shape"
+                android:backgroundTint="@color/pink"
+                android:layout_marginStart="10dp"
+                android:paddingHorizontal="10dp"
+                android:text="Tidak"
+
+
+                />
+
+
+
+        </LinearLayout>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/gray"
+            android:layout_marginVertical="10dp"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:minHeight="48dp"
+            >
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Pucat pada kulit"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:textSize="14sp"/>
+
+
+            <CheckBox
+                android:id="@+id/checkbox21"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/input_shape"
+                android:paddingHorizontal="10dp"
+                android:text="Iya"
+
+                />
+
+
+
+            <CheckBox
+                android:id="@+id/checkbox22"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/input_shape"
+                android:backgroundTint="@color/pink"
+                android:layout_marginStart="10dp"
+                android:paddingHorizontal="10dp"
+                android:text="Tidak"
+
+
+                />
+
+
+
+        </LinearLayout>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/gray"
+            android:layout_marginVertical="10dp"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:minHeight="48dp"
+            >
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=" pucat pada kuku"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:textSize="14sp"/>
+
+
+            <CheckBox
+                android:id="@+id/checkbox23"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/input_shape"
+                android:paddingHorizontal="10dp"
+                android:text="Iya"
+
+                />
+
+
+
+            <CheckBox
+                android:id="@+id/checkbox24"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/input_shape"
+                android:backgroundTint="@color/pink"
+                android:layout_marginStart="10dp"
+                android:paddingHorizontal="10dp"
+                android:text="Tidak"
+
+
+                />
+
+
+
+        </LinearLayout>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/gray"
+            android:layout_marginVertical="10dp"/>
+
+        <TextView
+            android:id="@+id/btn_confirm_opsi1"
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/orange"
+            android:background="@drawable/input_shape"
+            android:fontFamily="@font/interregular"
+            android:minHeight="42dp"
+            android:text="Simpan"
+            android:textColor="@color/white"
+            android:gravity="center"
+            android:paddingHorizontal="10dp"
+            android:layout_gravity="end"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="20dp"
+            />
     </LinearLayout>
+
 </ScrollView>
     <!-- TODO: Update blank fragment layout -->
 

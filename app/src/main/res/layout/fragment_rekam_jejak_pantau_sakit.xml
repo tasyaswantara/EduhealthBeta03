@@ -16,24 +16,28 @@
             android:text="NIS"
             android:fontFamily="@font/interregular"
             android:layout_marginTop="10dp"/>
+
         <EditText
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:background="@drawable/input_shape"
             android:minHeight="42dp"
-            android:paddingHorizontal="10dp"/>
+            android:paddingHorizontal="10dp"
+            tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck" />
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Nama"
             android:fontFamily="@font/interregular"
             android:layout_marginTop="10dp"/>
+
         <EditText
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:background="@drawable/input_shape"
             android:minHeight="42dp"
-            android:paddingHorizontal="10dp"/>
+            android:paddingHorizontal="10dp"
+            tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck" />
 
         <TextView
             android:layout_width="wrap_content"
@@ -41,12 +45,14 @@
             android:text="Hari ke"
             android:fontFamily="@font/interregular"
             android:layout_marginTop="10dp"/>
+
         <EditText
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:background="@drawable/input_shape"
             android:minHeight="42dp"
-            android:paddingHorizontal="10dp"/>
+            android:paddingHorizontal="10dp"
+            tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck" />
 
         <TextView
             android:layout_width="wrap_content"
@@ -54,24 +60,28 @@
             android:text="Sakit"
             android:fontFamily="@font/interregular"
             android:layout_marginTop="10dp"/>
+
         <EditText
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:background="@drawable/input_shape"
             android:minHeight="42dp"
-            android:paddingHorizontal="10dp"/>
+            android:paddingHorizontal="10dp"
+            tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck" />
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Perawatan"
             android:fontFamily="@font/interregular"
             android:layout_marginTop="10dp"/>
+
         <EditText
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:background="@drawable/input_shape"
             android:minHeight="42dp"
-            android:paddingHorizontal="10dp"/>
+            android:paddingHorizontal="10dp"
+            tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck" />
 
         <TextView
             android:id="@+id/btn_confirm_opsi3"

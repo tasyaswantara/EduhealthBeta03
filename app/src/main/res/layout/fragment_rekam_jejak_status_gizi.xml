@@ -16,24 +16,30 @@
             android:text="NIS"
             android:fontFamily="@font/interregular"
             android:layout_marginTop="10dp"/>
+
         <EditText
+            android:id="@+id/input_nis"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:background="@drawable/input_shape"
             android:minHeight="42dp"
-            android:paddingHorizontal="10dp"/>
+            android:paddingHorizontal="10dp"
+            tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck" />
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Nama"
             android:fontFamily="@font/interregular"
             android:layout_marginTop="10dp"/>
+
         <EditText
+            android:id="@+id/input_nama"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:background="@drawable/input_shape"
             android:minHeight="42dp"
-            android:paddingHorizontal="10dp"/>
+            android:paddingHorizontal="10dp"
+            tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck" />
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -49,12 +55,15 @@
                     android:layout_height="wrap_content"
                     android:text="BB"
                     android:fontFamily="@font/interregular"/>
+
                 <EditText
+                    android:id="@+id/input_bb"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:background="@drawable/input_shape"
                     android:minHeight="42dp"
-                    android:paddingHorizontal="10dp"/>
+                    android:paddingHorizontal="10dp"
+                    tools:ignore="TouchTargetSizeCheck,SpeakableTextPresentCheck" />
             </LinearLayout>
             <LinearLayout
                 android:layout_width="wrap_content"
@@ -67,12 +76,15 @@
                     android:layout_height="wrap_content"
                     android:text="TB"
                     android:fontFamily="@font/interregular"/>
+
                 <EditText
+                    android:id="@+id/input_tb"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:background="@drawable/input_shape"
                     android:minHeight="42dp"
-                    android:paddingHorizontal="10dp"/>
+                    android:paddingHorizontal="10dp"
+                    tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck" />
             </LinearLayout>
         </LinearLayout>
         <TextView
@@ -81,12 +93,15 @@
             android:text="Usia"
             android:fontFamily="@font/interregular"
             android:layout_marginTop="10dp"/>
+
         <EditText
+            android:id="@+id/input_usia"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:background="@drawable/input_shape"
             android:minHeight="42dp"
-            android:paddingHorizontal="10dp"/>
+            android:paddingHorizontal="10dp"
+            tools:ignore="TouchTargetSizeCheck,SpeakableTextPresentCheck" />
 
         <TextView
             android:layout_width="wrap_content"
@@ -94,24 +109,30 @@
             android:text="IMT/U"
             android:fontFamily="@font/interregular"
             android:layout_marginTop="10dp"/>
+
         <EditText
+            android:id="@+id/input_imt"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:background="@drawable/input_shape"
             android:minHeight="42dp"
-            android:paddingHorizontal="10dp"/>
+            android:paddingHorizontal="10dp"
+            tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck" />
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Status Gizi"
             android:fontFamily="@font/interregular"
             android:layout_marginTop="10dp"/>
+
         <EditText
+            android:id="@+id/input_status"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:background="@drawable/input_shape"
             android:minHeight="42dp"
-            android:paddingHorizontal="10dp"/>
+            android:paddingHorizontal="10dp"
+            tools:ignore="TouchTargetSizeCheck,SpeakableTextPresentCheck" />
 
         <TextView
             android:id="@+id/btn_confirm_opsi1"
