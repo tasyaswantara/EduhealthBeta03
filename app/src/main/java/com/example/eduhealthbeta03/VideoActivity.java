@@ -84,6 +84,8 @@ public class VideoActivity extends AppCompatActivity {
     }
     public void getData(){
         videoArrayList = new ArrayList<>();
+
+//      link harus ada "v=" jika tidak ada jadi bug
         videoArrayList.add(new Video("https://www.youtube.com/watch?v=00JysgLq1cE","Ini judulku bang"));
         videoArrayList.add(new Video("https://www.youtube.com/watch?v=bbg5WC-Br28","Nessie juge"));
         videoArrayList.add(new Video("https://www.youtube.com/watch?v=2wA_b6YHjqQ","Sheesh Sheesh"));
