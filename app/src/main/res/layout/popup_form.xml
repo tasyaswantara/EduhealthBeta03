@@ -17,7 +17,7 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Tambahan Video\nKesehatan"
+            android:text="@string/popup_title"
             android:fontFamily="@font/poppinsbold"
             android:textSize="20dp"
             android:layout_weight="1"/>
@@ -40,7 +40,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:fontFamily="@font/interregular"
-            android:text="LINK"
+            android:text="@string/popup_link"
             android:textSize="12dp"
             tools:ignore="TextSizeCheck" />
 
@@ -61,7 +61,7 @@
             android:layout_height="wrap_content"
             android:layout_marginTop="5dp"
             android:fontFamily="@font/interregular"
-            android:text="JUDUL"
+            android:text="@string/popup_judul"
             android:textSize="12dp"
             tools:ignore="TextSizeCheck" />
 
@@ -82,9 +82,9 @@
         android:layout_width="100dp"
         android:layout_height="wrap_content"
         android:layout_marginTop="20dp"
-        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
         android:layout_alignParentBottom="true"
-        android:text="Tambah"
+        android:text="@string/button_tambah"
         android:gravity="center"
         android:background="@drawable/input_shape"
         android:backgroundTint="@color/orange"

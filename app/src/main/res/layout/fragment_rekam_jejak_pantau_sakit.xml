@@ -6,99 +6,105 @@
     tools:context=".RekamJejakPantauSakit">
 
     <!-- TODO: Update blank fragment layout -->
-    <LinearLayout
+    <ScrollView
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="vertical">
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="NIS"
-            android:fontFamily="@font/interregular"
-            android:layout_marginTop="10dp"/>
-
-        <EditText
+        android:layout_height="match_parent"
+        >
+        <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:background="@drawable/input_shape"
-            android:minHeight="42dp"
-            android:paddingHorizontal="10dp"
-            tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck" />
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Nama"
-            android:fontFamily="@font/interregular"
-            android:layout_marginTop="10dp"/>
+            android:orientation="vertical">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/input_nis"
+                android:fontFamily="@font/interregular"
+                android:layout_marginTop="10dp"/>
 
-        <EditText
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:background="@drawable/input_shape"
-            android:minHeight="42dp"
-            android:paddingHorizontal="10dp"
-            tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck" />
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/input_shape"
+                android:minHeight="42dp"
+                android:paddingHorizontal="10dp"
+                tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/input_nama"
+                android:fontFamily="@font/interregular"
+                android:layout_marginTop="10dp"/>
 
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Hari ke"
-            android:fontFamily="@font/interregular"
-            android:layout_marginTop="10dp"/>
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/input_shape"
+                android:minHeight="42dp"
+                android:paddingHorizontal="10dp"
+                tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck" />
 
-        <EditText
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:background="@drawable/input_shape"
-            android:minHeight="42dp"
-            android:inputType="number"
-            android:paddingHorizontal="10dp"
-            tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/input_hari"
+                android:fontFamily="@font/interregular"
+                android:layout_marginTop="10dp"/>
 
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Sakit"
-            android:fontFamily="@font/interregular"
-            android:layout_marginTop="10dp"/>
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/input_shape"
+                android:minHeight="42dp"
+                android:inputType="number"
+                android:paddingHorizontal="10dp"
+                tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck" />
 
-        <EditText
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:background="@drawable/input_shape"
-            android:minHeight="42dp"
-            android:paddingHorizontal="10dp"
-            tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck" />
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Perawatan"
-            android:fontFamily="@font/interregular"
-            android:layout_marginTop="10dp"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/input_hari"
+                android:fontFamily="@font/interregular"
+                android:layout_marginTop="10dp"/>
 
-        <EditText
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:background="@drawable/input_shape"
-            android:minHeight="42dp"
-            android:paddingHorizontal="10dp"
-            tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck" />
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/input_shape"
+                android:minHeight="42dp"
+                android:paddingHorizontal="10dp"
+                tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/input_perawatan"
+                android:fontFamily="@font/interregular"
+                android:layout_marginTop="10dp"/>
 
-        <TextView
-            android:id="@+id/btn_confirm_opsi3"
-            android:layout_width="120dp"
-            android:layout_height="wrap_content"
-            android:backgroundTint="@color/orange"
-            android:background="@drawable/input_shape"
-            android:fontFamily="@font/interregular"
-            android:minHeight="42dp"
-            android:text="Simpan"
-            android:textColor="@color/white"
-            android:gravity="center"
-            android:paddingHorizontal="10dp"
-            android:layout_gravity="end"
-            android:layout_marginTop="20dp"
-            />
-    </LinearLayout>
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/input_shape"
+                android:minHeight="42dp"
+                android:paddingHorizontal="10dp"
+                tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck" />
+
+            <TextView
+                android:id="@+id/btn_confirm_opsi3"
+                android:layout_width="120dp"
+                android:layout_height="wrap_content"
+                android:backgroundTint="@color/orange"
+                android:background="@drawable/input_shape"
+                android:fontFamily="@font/interregular"
+                android:minHeight="42dp"
+                android:text="@string/button_simpan"
+                android:textColor="@color/white"
+                android:gravity="center"
+                android:paddingHorizontal="10dp"
+                android:layout_gravity="end"
+                android:layout_marginTop="20dp"
+                />
+        </LinearLayout>
+    </ScrollView>
+
 
 </FrameLayout>

@@ -1,5 +1,41 @@
 <resources>
     <string name="app_name">Eduhealth beta 0.3</string>
+<!--    home page-->
+    <string name="app_name1">Eduhealth</string>
+    <string name="app_name2">Time</string>
+    <string name="fitur1">Video\nKesehatan</string>
+    <string name="fitur1_2">Video Kesehatan</string>
+    <string name="fitur2">Rekam\nJejak</string>
+    <string name="fitur2_2">Rekam Jejak</string>
+    <string name="fitur3">QnA</string>
+    <string name="fitur4">Tentang\nAplikasi</string>
+
+<!--    rekam jejak-->
+    <string name="opsi1">Antropometri dan Status Gizi</string>
+    <string name="opsi2">Skrining Anemia</string>
+    <string name="opsi3">Pantau Sakit</string>
+
+<!--    pantau sakit-->
+    <string name="input_nis">NIS</string>
+    <string name="input_nama">Nama</string>
+    <string name="input_hari">Hari ke</string>
+    <string name="input_sakit">Sakit</string>
+    <string name="input_perawatan">Perawatan</string>
+
+    <string name="input_bb">BB</string>
+    <string name="input_tb">TB</string>
+    <string name="input_usia">Usia</string>
+    <string name="input_imt">IMT/U</string>
+    <string name="input_status">Status Gizi</string>
+
+    <string name="button_simpan">Simpan</string>
+    <string name="button_tambah">Tambah</string>
+
+<!--    video kesehatan-->
+    <string name="popup_title">Tambahan Video\nKesehatan</string>
+    <string name="popup_link">LINK</string>
+    <string name="popup_judul">JUDUL</string>
+
     <string name="lorem_ipsum1">
         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam in scelerisque sem. Mauris
         volutpat, dolor id interdum ullamcorper, risus dolor egestas lectus, sit amet mattis purus
@@ -17,6 +53,8 @@
     </string>
 
 <!--    skrining anemia-->
+    <string name="confirm_iya">Iya</string>
+    <string name="confirm_tidak">Tidak</string>
     <string name="question1">
         5 L (lemah, letih, lesu,\nlelah, lalai)
     </string>
