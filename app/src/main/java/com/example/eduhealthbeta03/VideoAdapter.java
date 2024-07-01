@@ -1,6 +1,5 @@
 package com.example.eduhealthbeta03;
 
-import static androidx.core.content.ContextCompat.startActivity;
 
 import android.app.Dialog;
 import android.content.Context;
@@ -21,9 +20,10 @@ import androidx.recyclerview.widget.RecyclerView;
 import com.bumptech.glide.Glide;
 
 import java.util.ArrayList;
+import java.util.Objects;
 
 public class VideoAdapter extends RecyclerView.Adapter<VideoAdapter.VideoViewHolder> {
-    private ArrayList<Video> listVideo;
+    private final ArrayList<Video> listVideo;
     public VideoAdapter(ArrayList<Video> listVideo) {
         this.listVideo = listVideo;
     }
@@ -56,14 +56,10 @@ public class VideoAdapter extends RecyclerView.Adapter<VideoAdapter.VideoViewHol
             holder.itemView.getContext().startActivity(intent);
         });
 
-        holder.btn_edit.setOnClickListener(view -> {
-            showDialog(holder.itemView.getContext(), "Simpan", false, video);
-        });
+        holder.btn_edit.setOnClickListener(view -> showDialog(holder.itemView.getContext(), "Simpan", false, video));
 
 
-        holder.btn_delete.setOnClickListener(view -> {
-            showDialog(holder.itemView.getContext(), "Hapus", true, video);
-        });
+        holder.btn_delete.setOnClickListener(view -> showDialog(holder.itemView.getContext(), "Hapus", true, video));
 
 
     }
@@ -90,12 +86,14 @@ public class VideoAdapter extends RecyclerView.Adapter<VideoAdapter.VideoViewHol
 
         btnClose.setOnClickListener(v -> dialog.dismiss());
 
-        dialog.getWindow().setBackgroundDrawable(new ColorDrawable(Color.TRANSPARENT));
+        Objects.requireNonNull(dialog.getWindow()).setBackgroundDrawable(new ColorDrawable(Color.TRANSPARENT));
         dialog.show();
     }
-    public class VideoViewHolder extends RecyclerView.ViewHolder{
-        private TextView title;
-        private ImageView imgVideo, btn_edit, btn_delete;
+    public static class VideoViewHolder extends RecyclerView.ViewHolder{
+        private final TextView title;
+        private final ImageView imgVideo;
+        private final ImageView btn_edit;
+        private final ImageView btn_delete;
 
         public VideoViewHolder(View view){
             super(view);

@@ -6,7 +6,6 @@ import android.annotation.SuppressLint;
 import android.content.Intent;
 import android.os.Bundle;
 
-import android.view.View;
 import android.widget.ImageView;
 
 
@@ -22,9 +21,6 @@ import java.util.ArrayList;
 
 public class QnaActivity extends AppCompatActivity {
 
-    private ImageView btn_back;
-    private RecyclerView qna_recyclerView;
-    private QnaAdapter qnaAdapter;
     private ArrayList<Qna> qnaArrayList;
 
     @SuppressLint("MissingInflatedId")
@@ -40,21 +36,18 @@ public class QnaActivity extends AppCompatActivity {
         });
 
         getData();
-        qna_recyclerView = findViewById(R.id.qna_recyclerview);
-        qnaAdapter= new QnaAdapter(qnaArrayList);
+        RecyclerView qna_recyclerView = findViewById(R.id.qna_recyclerview);
+        QnaAdapter qnaAdapter = new QnaAdapter(qnaArrayList);
         RecyclerView.LayoutManager layoutManager = new LinearLayoutManager(QnaActivity.this);
         qna_recyclerView.setLayoutManager(layoutManager);
         qna_recyclerView.setAdapter(qnaAdapter);
 
-        btn_back=findViewById(R.id.btn_back);
-        btn_back.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Intent i= new Intent(QnaActivity.this, HomeActivity.class);
-                startActivity(i);
+        ImageView btn_back = findViewById(R.id.btn_back);
+        btn_back.setOnClickListener(view -> {
+            Intent i= new Intent(QnaActivity.this, HomeActivity.class);
+            startActivity(i);
 
 
-            }
         });
 
     }

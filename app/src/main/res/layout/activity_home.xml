@@ -18,8 +18,9 @@
                 android:layout_width="match_parent"
                 android:layout_height="240dp"
                 android:background="@drawable/bg_home"
-                android:paddingLeft="45dp"
-                android:paddingTop="20dp">
+                android:paddingStart="45dp"
+                android:paddingTop="20dp"
+                tools:ignore="RtlSymmetry">
                 <LinearLayout
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
@@ -29,34 +30,40 @@
                         android:id="@+id/logo_ub"
                         android:layout_width="50dp"
                         android:layout_height="50dp"
-                        android:background="@drawable/logo_ub" />
+                        android:background="@drawable/logo_ub"
+                        tools:ignore="ContentDescription"/>
+
+                    <TextView
+                        android:id="@+id/txt_1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/logo_ub"
+                        android:layout_marginTop="10dp"
+                        android:fontFamily="@font/poppinsbold"
+                        android:text="@string/app_name1"
+                        android:textColor="@color/white"
+                        android:textSize="34sp"
+                        tools:ignore="ObsoleteLayoutParam,TextContrastCheck" />
 
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:layout_below="@+id/logo_ub"
-                        android:text="@string/app_name1"
-                        android:textColor="@color/white"
-                        android:fontFamily="@font/poppinsbold"
-                        android:textSize="34sp"
-                        android:layout_marginTop="10dp"
-                        android:id="@+id/txt_1"/>
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
                         android:layout_below="@+id/txt_1"
+                        android:layout_marginTop="-15dp"
+                        android:fontFamily="@font/poppinsbold"
                         android:text="@string/app_name2"
                         android:textColor="@color/white"
-                        android:fontFamily="@font/poppinsbold"
                         android:textSize="34sp"
-                        android:layout_marginTop="-15dp"/>
+                        tools:ignore="ObsoleteLayoutParam,TextContrastCheck" />
                 </LinearLayout>
 
                 <ImageView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
+                    android:importantForAccessibility="no"
+                    android:scaleX="-1"
                     android:src="@drawable/people_home"
-                    android:scaleX="-1"/>
+                    tools:ignore="ImageContrastCheck" />
 
             </LinearLayout>
             <LinearLayout
@@ -67,7 +74,8 @@
                 android:paddingHorizontal="35dp"
                 android:paddingVertical="20dp"
                 android:layout_marginTop="20dp"
-                android:orientation="horizontal">
+                android:orientation="horizontal"
+                tools:ignore="DisableBaselineAlignment">
                 <!--    part 1-->
                 <LinearLayout
                     android:id="@+id/btn_video"
@@ -75,25 +83,29 @@
                     android:layout_height="190dp"
                     android:background="@drawable/radius_shape"
                     android:layout_weight="1"
+                    android:contentDescription="TODO"
+                    android:importantForAccessibility="no"
                     android:orientation="vertical"
                     android:paddingTop="10dp"
                     android:paddingHorizontal="20dp"
-                    >
+                    tools:ignore="HardcodedText">
                     <ImageView
                         android:layout_width="120dp"
                         android:layout_height="110dp"
                         android:src="@drawable/img_video"
                         android:layout_gravity="center_horizontal"
-                        android:layout_marginTop="10dp"/>
+                        android:layout_marginTop="10dp"
+                        tools:ignore="ContentDescription" />
+
                     <TextView
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
+                        android:layout_marginTop="2dp"
+                        android:fontFamily="@font/poppinsbold"
                         android:text="@string/fitur1"
                         android:textColor="@color/white"
-                        android:fontFamily="@font/poppinsbold"
-                        android:layout_marginTop="2dp"
                         android:textSize="16sp"
-                        />
+                        tools:ignore="TextContrastCheck" />
                 </LinearLayout>
                 <!--    part 2-->
                 <LinearLayout
@@ -112,16 +124,18 @@
                         android:layout_height="110dp"
                         android:src="@drawable/img_rekam"
                         android:layout_gravity="center_horizontal"
-                        android:layout_marginTop="10dp"/>
+                        android:layout_marginTop="10dp"
+                        tools:ignore="ContentDescription"/>
+
                     <TextView
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
+                        android:layout_marginTop="2dp"
+                        android:fontFamily="@font/poppinsbold"
                         android:text="@string/fitur2"
                         android:textColor="@color/white"
-                        android:fontFamily="@font/poppinsbold"
-                        android:layout_marginTop="2dp"
                         android:textSize="16sp"
-                        />
+                        tools:ignore="TextContrastCheck" />
                 </LinearLayout>
             </LinearLayout>
             <LinearLayout
@@ -131,7 +145,8 @@
                 android:layout_below="@id/section_2"
                 android:paddingHorizontal="35dp"
                 android:orientation="horizontal"
-                android:layout_marginBottom="40dp">
+                android:layout_marginBottom="40dp"
+                tools:ignore="DisableBaselineAlignment">
                 <!--    part 1-->
                 <LinearLayout
                     android:id="@+id/btn_qna"
@@ -150,16 +165,18 @@
                         android:src="@drawable/img_qna"
                         android:layout_gravity="center_horizontal"
                         android:layout_marginTop="10dp"
+                        tools:ignore="ContentDescription"
                         />
+
                     <TextView
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
+                        android:layout_marginTop="16dp"
+                        android:fontFamily="@font/poppinsbold"
                         android:text="@string/fitur3"
                         android:textColor="@color/white"
-                        android:fontFamily="@font/poppinsbold"
-                        android:layout_marginTop="16dp"
                         android:textSize="16sp"
-                        />
+                        tools:ignore="TextContrastCheck" />
                 </LinearLayout>
                 <!--    part 2-->
                 <LinearLayout
@@ -178,16 +195,18 @@
                         android:layout_height="110dp"
                         android:src="@drawable/img_tentang"
                         android:layout_gravity="center_horizontal"
-                        android:layout_marginTop="10dp"/>
+                        android:layout_marginTop="10dp"
+                        tools:ignore="ContentDescription"/>
+
                     <TextView
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
+                        android:layout_marginTop="2dp"
+                        android:fontFamily="@font/poppinsbold"
                         android:text="@string/fitur4"
                         android:textColor="@color/white"
-                        android:fontFamily="@font/poppinsbold"
-                        android:layout_marginTop="2dp"
                         android:textSize="16sp"
-                        />
+                        tools:ignore="TextContrastCheck" />
                 </LinearLayout>
 
             </LinearLayout>

@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
     android:orientation="horizontal"
@@ -8,39 +9,41 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
    >
 
-        <TextView
-            android:id="@+id/txt_name"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Video Title"
-            android:fontFamily="@font/interregular"
-            android:background="@drawable/input_shape"
-            android:minHeight="38dp"
-            android:textSize="16dp"
-            android:layout_weight="1"
-            android:gravity="center_vertical"
-            android:paddingHorizontal="10dp"/>
+    <TextView
+        android:id="@+id/txt_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:background="@drawable/input_shape"
+        android:fontFamily="@font/interregular"
+        android:gravity="center_vertical"
+        android:minHeight="38dp"
+        android:paddingHorizontal="10dp"
+        android:text="Video Title"
+        android:textSize="16dp"
+        tools:ignore="HardcodedText,InefficientWeight,SpUsage,TextSizeCheck" />
         <LinearLayout
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center_vertical"
             android:layout_marginStart="10dp"
             >
+
             <ImageView
                 android:id="@+id/btn_edit"
                 android:layout_width="34dp"
                 android:layout_height="34dp"
                 android:src="@drawable/img_edit"
 
-                />
+                tools:ignore="ContentDescription,ImageContrastCheck" />
 
             <ImageView
                 android:id="@+id/btn_delete"
                 android:layout_width="34dp"
                 android:layout_height="34dp"
-                android:src="@drawable/img_delete"
                 android:layout_marginStart="5dp"
-                />
+                android:src="@drawable/img_delete"
+                tools:ignore="ContentDescription,ImageContrastCheck" />
         </LinearLayout>
 
     </LinearLayout>

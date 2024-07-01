@@ -7,7 +7,6 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.CheckBox;
-import android.widget.CompoundButton;
 
 /**
  * A simple {@link Fragment} subclass.
@@ -16,16 +15,12 @@ import android.widget.CompoundButton;
  */
 public class RekamJejakSkriningAnemia extends Fragment {
 
-    private CheckBox[] checkBoxes = new CheckBox[24]; // Jumlah CheckBox disesuaikan
+    private final CheckBox[] checkBoxes = new CheckBox[24]; // Jumlah CheckBox disesuaikan
 
     // TODO: Rename parameter arguments, choose names that match
     // the fragment initialization parameters, e.g. ARG_ITEM_NUMBER
     private static final String ARG_PARAM1 = "param1";
     private static final String ARG_PARAM2 = "param2";
-
-    // TODO: Rename and change types of parameters
-    private String mParam1;
-    private String mParam2;
 
     public RekamJejakSkriningAnemia() {
         // Required empty public constructor
@@ -54,8 +49,9 @@ public class RekamJejakSkriningAnemia extends Fragment {
         super.onCreate(savedInstanceState);
 
         if (getArguments() != null) {
-            mParam1 = getArguments().getString(ARG_PARAM1);
-            mParam2 = getArguments().getString(ARG_PARAM2);
+            // TODO: Rename and change types of parameters
+            String mParam1 = getArguments().getString(ARG_PARAM1);
+            String mParam2 = getArguments().getString(ARG_PARAM2);
         }
     }
 
@@ -68,7 +64,7 @@ public class RekamJejakSkriningAnemia extends Fragment {
 
 
         for (int i = 0; i < checkBoxes.length; i++) {
-            int checkBoxId = getResources().getIdentifier("checkbox" + (i + 1), "id", getActivity().getPackageName());
+            @SuppressLint("DiscouragedApi") int checkBoxId = getResources().getIdentifier("checkbox" + (i + 1), "id", requireActivity().getPackageName());
             checkBoxes[i] = view.findViewById(checkBoxId);
         }
 
@@ -92,14 +88,11 @@ public class RekamJejakSkriningAnemia extends Fragment {
 
     private void setSingleSelection(CheckBox[] checkBoxes) {
         for (CheckBox checkBox : checkBoxes) {
-            checkBox.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
-                @Override
-                public void onCheckedChanged(CompoundButton buttonView, boolean isChecked) {
-                    if (isChecked) {
-                        for (CheckBox cb : checkBoxes) {
-                            if (cb != buttonView) {
-                                cb.setChecked(false);
-                            }
+            checkBox.setOnCheckedChangeListener((buttonView, isChecked) -> {
+                if (isChecked) {
+                    for (CheckBox cb : checkBoxes) {
+                        if (cb != buttonView) {
+                            cb.setChecked(false);
                         }
                     }
                 }

@@ -4,15 +4,11 @@ import android.app.Dialog;
 import android.content.Intent;
 import android.graphics.Color;
 import android.graphics.drawable.ColorDrawable;
-import android.net.Uri;
 import android.os.Bundle;
-import android.view.View;
 import android.widget.ImageView;
-import com.bumptech.glide.Glide;
 
 import androidx.activity.EdgeToEdge;
 import androidx.appcompat.app.AppCompatActivity;
-import androidx.cardview.widget.CardView;
 import androidx.core.graphics.Insets;
 import androidx.core.view.ViewCompat;
 import androidx.core.view.WindowInsetsCompat;
@@ -20,15 +16,12 @@ import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
 import java.util.ArrayList;
+import java.util.Objects;
 
 public class VideoActivity extends AppCompatActivity {
-     private RecyclerView recyclerView;
-     private VideoAdapter videoAdapter;
-     private ArrayList<Video> videoArrayList;
-     private ImageView btn_back;
-     private ImageView fab;
-     private ImageView btn_close;
-     Dialog dialog;
+    private ArrayList<Video> videoArrayList;
+    private ImageView btn_close;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -40,44 +33,31 @@ public class VideoActivity extends AppCompatActivity {
             return insets;
         });
         getData();
-        recyclerView = findViewById(R.id.recycleview);
-        videoAdapter= new VideoAdapter(videoArrayList);
+        RecyclerView recyclerView = findViewById(R.id.recycleview);
+        VideoAdapter videoAdapter = new VideoAdapter(videoArrayList);
         RecyclerView.LayoutManager layoutManager = new LinearLayoutManager(VideoActivity.this);
         recyclerView.setLayoutManager(layoutManager);
         recyclerView.setAdapter(videoAdapter);
 
 
+        ImageView btn_back = findViewById(R.id.btn_back);
+        btn_back.setOnClickListener(view -> {
+            Intent i= new Intent(VideoActivity.this, HomeActivity.class);
+            startActivity(i);
 
 
-        btn_back= findViewById(R.id.btn_back);
-        btn_back.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Intent i= new Intent(VideoActivity.this, HomeActivity.class);
-                startActivity(i);
-
-
-            }
         });
 
-        fab=findViewById(R.id.fab);
-        fab.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Dialog dialog =new Dialog(VideoActivity.this);
-                dialog.setContentView(R.layout.popup_form);
+        ImageView fab = findViewById(R.id.fab);
+        fab.setOnClickListener(view -> {
+            Dialog dialog =new Dialog(VideoActivity.this);
+            dialog.setContentView(R.layout.popup_form);
 
-                btn_close= dialog.findViewById(R.id.btn_close);
-                btn_close.setOnClickListener(new View.OnClickListener() {
-                    @Override
-                    public void onClick(View view) {
-                        dialog.dismiss();
-                    }
-                });
-                dialog.getWindow().setBackgroundDrawable(new ColorDrawable(Color.TRANSPARENT));
-                dialog.show();
+            btn_close= dialog.findViewById(R.id.btn_close);
+            btn_close.setOnClickListener(view1 -> dialog.dismiss());
+            Objects.requireNonNull(dialog.getWindow()).setBackgroundDrawable(new ColorDrawable(Color.TRANSPARENT));
+            dialog.show();
 
-            }
         });
 
 

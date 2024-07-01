@@ -2,16 +2,11 @@ package com.example.eduhealthbeta03;
 
 public class Rekam {
 
-    private String name;
+    private final String name;
 
     public String getName() {
         return name;
     }
-
-    public void setName(String name) {
-        this.name = name;
-    }
-
 
 
     public Rekam(String name) {

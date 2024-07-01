@@ -14,7 +14,7 @@ import androidx.recyclerview.widget.RecyclerView;
 import java.util.ArrayList;
 
 public class RekamAdapter extends RecyclerView.Adapter<RekamAdapter.RekamViewHolder> {
-    private ArrayList<Rekam> listRekam;
+    private final ArrayList<Rekam> listRekam;
     private boolean isEditMode = false;
 
     public RekamAdapter(ArrayList<Rekam> listRekam) {
@@ -54,14 +54,15 @@ public class RekamAdapter extends RecyclerView.Adapter<RekamAdapter.RekamViewHol
     }
 
     public static class RekamViewHolder extends RecyclerView.ViewHolder {
-        private TextView name;
-        private ImageView btn_edit, btn_delete;
+        private final TextView name;
+        private final ImageView btn_edit;
+
 
         public RekamViewHolder(View view) {
             super(view);
             name = view.findViewById(R.id.txt_name);
             btn_edit = view.findViewById(R.id.btn_edit);
-            btn_delete = view.findViewById(R.id.btn_delete);
+
         }
     }
 }

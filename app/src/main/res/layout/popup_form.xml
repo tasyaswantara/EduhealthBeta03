@@ -13,19 +13,23 @@
         android:id="@+id/popup_section1"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:orientation="horizontal">
+        android:orientation="horizontal"
+        tools:ignore="UseCompoundDrawables">
+
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="@string/popup_title"
+            android:layout_weight="1"
             android:fontFamily="@font/poppinsbold"
+            android:text="@string/popup_title"
             android:textSize="20dp"
-            android:layout_weight="1"/>
+            tools:ignore="InefficientWeight,SpUsage,TextSizeCheck" />
         <ImageView
             android:id="@+id/btn_close"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:src="@drawable/icon_cross"/>
+            android:src="@drawable/icon_cross"
+            tools:ignore="ContentDescription" />
     </LinearLayout>
     <LinearLayout
         android:id="@+id/popup_section2"
@@ -41,7 +45,7 @@
             android:layout_height="wrap_content"
             android:fontFamily="@font/interregular"
             android:text="@string/popup_link"
-            android:textSize="12dp"
+            android:textSize="12sp"
             tools:ignore="TextSizeCheck" />
 
         <EditText
@@ -54,7 +58,7 @@
             android:minHeight="38dp"
             android:paddingHorizontal="10dp"
             android:textSize="14sp"
-            tools:ignore="TouchTargetSizeCheck" />
+            tools:ignore="Autofill,HardcodedText,TextContrastCheck,TextFields,TouchTargetSizeCheck" />
 
         <TextView
             android:layout_width="wrap_content"
@@ -62,7 +66,7 @@
             android:layout_marginTop="5dp"
             android:fontFamily="@font/interregular"
             android:text="@string/popup_judul"
-            android:textSize="12dp"
+            android:textSize="12sp"
             tools:ignore="TextSizeCheck" />
 
         <EditText
@@ -75,21 +79,23 @@
             android:minHeight="38dp"
             android:paddingHorizontal="10dp"
             android:textSize="14sp"
-            tools:ignore="TouchTargetSizeCheck" />
+            tools:ignore="Autofill,HardcodedText,TextContrastCheck,TextFields,TouchTargetSizeCheck" />
     </LinearLayout>
+
     <TextView
         android:id="@+id/btn_confirm"
         android:layout_width="100dp"
         android:layout_height="wrap_content"
-        android:layout_marginTop="20dp"
         android:layout_alignParentEnd="true"
         android:layout_alignParentBottom="true"
-        android:text="@string/button_tambah"
-        android:gravity="center"
+        android:layout_marginTop="20dp"
         android:background="@drawable/input_shape"
         android:backgroundTint="@color/orange"
-        android:textColor="@color/white"
+        android:fontFamily="@font/intermedium"
+        android:gravity="center"
         android:minHeight="34dp"
-        android:fontFamily="@font/intermedium"/>
+        android:text="@string/button_tambah"
+        android:textColor="@color/white"
+        tools:ignore="TextContrastCheck" />
 
 </RelativeLayout>

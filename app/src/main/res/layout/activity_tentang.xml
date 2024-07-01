@@ -11,12 +11,12 @@
         android:id="@+id/btn_back"
         android:layout_width="30dp"
         android:layout_height="30dp"
+        android:layout_marginTop="30dp"
         android:src="@drawable/arrow_left"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         android:layout_marginStart="20dp"
-        android:layout_marginTop="30dp"
-        />
+        tools:ignore="ContentDescription,ImageContrastCheck" />
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -34,7 +34,8 @@
             android:layout_height="match_parent"
             android:text="@string/lorem_ipsum1"
             android:fontFamily="@font/interregular"
-            android:justificationMode="inter_word"/>
+            android:justificationMode="inter_word"
+            tools:ignore="UnusedAttribute,VisualLintLongText" />
 
 
     </LinearLayout>

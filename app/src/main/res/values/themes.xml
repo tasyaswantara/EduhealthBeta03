@@ -3,6 +3,8 @@
     <style name="Base.Theme.EduhealthBeta03" parent="Theme.Material3.Light.NoActionBar">
         <!-- Customize your light theme here. -->
         <!-- <item name="colorPrimary">@color/my_light_primary</item> -->
+        <!-- Primary color -->
+
     </style>
 
     <style name="Theme.EduhealthBeta03" parent="Base.Theme.EduhealthBeta03" />

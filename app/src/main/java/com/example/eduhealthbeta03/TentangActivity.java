@@ -12,7 +12,6 @@ import androidx.core.view.ViewCompat;
 import androidx.core.view.WindowInsetsCompat;
 
 public class TentangActivity extends AppCompatActivity {
-    private ImageView btn_back;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -24,15 +23,12 @@ public class TentangActivity extends AppCompatActivity {
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom);
             return insets;
         });
-        btn_back= findViewById(R.id.btn_back);
-        btn_back.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Intent i= new Intent(TentangActivity.this, HomeActivity.class);
-                startActivity(i);
+        ImageView btn_back = findViewById(R.id.btn_back);
+        btn_back.setOnClickListener(view -> {
+            Intent i= new Intent(TentangActivity.this, HomeActivity.class);
+            startActivity(i);
 
 
-            }
         });
     }
 }

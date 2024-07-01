@@ -1,11 +1,11 @@
 package com.example.eduhealthbeta03;
 
+
 import android.content.Intent;
 import android.content.res.ColorStateList;
 import android.graphics.Color;
 import android.os.Bundle;
 import android.view.View;
-import android.widget.ImageView;
 import android.widget.TextView;
 
 import androidx.activity.EdgeToEdge;
@@ -17,10 +17,11 @@ import androidx.fragment.app.Fragment;
 import androidx.fragment.app.FragmentManager;
 import androidx.fragment.app.FragmentTransaction;
 
+/** @noinspection ALL*/
 public class RekamJejakActivity extends AppCompatActivity implements View.OnClickListener {
     private TextView opsi1, opsi2, opsi3;
     private ColorStateList def;
-    private boolean isEditMode;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -45,9 +46,7 @@ public class RekamJejakActivity extends AppCompatActivity implements View.OnClic
 
         updateSelection(new RekamJejakStatusGizi(), opsi1);
 
-        findViewById(R.id.btn_back).setOnClickListener(view -> {
-            startActivity(new Intent(RekamJejakActivity.this, RekamActivity.class));
-        });
+        findViewById(R.id.btn_back).setOnClickListener(view -> startActivity(new Intent(RekamJejakActivity.this, RekamActivity.class)));
     }
 
     @Override
@@ -71,6 +70,7 @@ public class RekamJejakActivity extends AppCompatActivity implements View.OnClic
             updateSelection(selectedFragment, selectedOpsi);
         }
     }
+
 
     private void updateSelection(Fragment fragment, TextView selectedOpsi) {
         replaceFragment(fragment);

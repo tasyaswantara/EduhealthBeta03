@@ -16,10 +16,7 @@ import androidx.recyclerview.widget.RecyclerView;
 import java.util.ArrayList;
 
 public class RekamActivity extends AppCompatActivity {
-    private RecyclerView rekam_recyclerView;
-    private RekamAdapter rekamAdapter;
     private ArrayList<Rekam> rekamArrayList;
-    private ImageView btn_back,fab;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -32,31 +29,25 @@ public class RekamActivity extends AppCompatActivity {
             return insets;
         });
         getData();
-        rekam_recyclerView = findViewById(R.id.rekam_recyclerview);
-        rekamAdapter= new RekamAdapter(rekamArrayList);
+        RecyclerView rekam_recyclerView = findViewById(R.id.rekam_recyclerview);
+        RekamAdapter rekamAdapter = new RekamAdapter(rekamArrayList);
         RecyclerView.LayoutManager layoutManager = new LinearLayoutManager(RekamActivity.this);
         rekam_recyclerView.setLayoutManager(layoutManager);
         rekam_recyclerView.setAdapter(rekamAdapter);
 
-        btn_back= findViewById(R.id.btn_back);
-        btn_back.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Intent i= new Intent(RekamActivity.this, HomeActivity.class);
-                startActivity(i);
+        ImageView btn_back = findViewById(R.id.btn_back);
+        btn_back.setOnClickListener(view -> {
+            Intent i= new Intent(RekamActivity.this, HomeActivity.class);
+            startActivity(i);
 
 
-            }
         });
-        fab= findViewById(R.id.fab);
-        fab.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Intent i= new Intent(RekamActivity.this, RekamJejakActivity.class);
-                startActivity(i);
+        ImageView fab = findViewById(R.id.fab);
+        fab.setOnClickListener(view -> {
+            Intent i= new Intent(RekamActivity.this, RekamJejakActivity.class);
+            startActivity(i);
 
 
-            }
         });
     }
     public void getData(){

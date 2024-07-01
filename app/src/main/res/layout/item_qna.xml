@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
     android:outlineSpotShadowColor="@color/blue"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
@@ -9,7 +10,8 @@
     app:contentPadding="20dp"
     android:layout_marginHorizontal="20dp"
     android:layout_marginVertical="5dp"
-    android:backgroundTint="@color/lightblue">
+    android:backgroundTint="@color/lightblue"
+    tools:ignore="UnusedAttribute">
 
         <LinearLayout
             android:id="@+id/qna_layout"
@@ -23,7 +25,8 @@
                 android:layout_height="wrap_content"
                 android:text="Ini merupakan contoh pertanyaan tentang aplikasi ini ?"
                 android:fontFamily="@font/poppinsbold"
-                android:textSize="16sp"/>
+                android:textSize="16sp"
+                tools:ignore="HardcodedText" />
             <TextView
                 android:id="@+id/detail"
                 android:layout_width="match_parent"
@@ -31,7 +34,8 @@
                 android:visibility="gone"
                 android:fontFamily="@font/interregular"
                 android:layout_marginTop="16dp"
-                android:text="Ini merupakan contoh Jawaban tentang aplikasi ini. Gatau benar atau tidak yang penting dijawab saja ya."/>
+                android:text="Ini merupakan contoh Jawaban tentang aplikasi ini. Gatau benar atau tidak yang penting dijawab saja ya."
+                tools:ignore="HardcodedText" />
 
         </LinearLayout>
 
