@@ -15,6 +15,46 @@
         bibendum, vel congue leo egestas.\n\n
 
     </string>
+
+<!--    skrining anemia-->
+    <string name="question1">
+        5 L (lemah, letih, lesu,\nlelah, lalai)
+    </string>
+    <string name="question2">
+        Sakit kepala dan pusing
+    </string>
+    <string name="question3">
+        Mata berkunang-kunang
+    </string>
+    <string name="question4">
+        Mudah mengantuk
+    </string>
+    <string name="question5">
+        Cepat capek
+    </string>
+    <string name="question6">
+        Sulit berkonsentrasi
+    </string>
+    <string name="question7">
+        Pucat pada muka
+    </string>
+    <string name="question8">
+        Pucat pada telapak tangan
+    </string>
+    <string name="question9">
+        Pucat pada kelopak mata
+    </string>
+    <string name="question10">
+       Pucat pada bibir
+    </string>
+    <string name="question11">
+        Pucat pada kulit
+    </string>
+    <string name="question12">
+        Pucat pada kuku
+    </string>
+
+
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
 

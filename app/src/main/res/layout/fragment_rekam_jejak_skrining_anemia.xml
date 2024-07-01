@@ -28,7 +28,7 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="5 L (lemah, letih, lesu,\nlelah, lalai)"
+                android:text="@string/question1"
                 android:layout_gravity="center"
                 android:layout_weight="1"
                 android:textSize="14sp"/>
@@ -81,7 +81,7 @@
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
                 android:layout_weight="1"
-                android:text="Sakit kepala dan pusing"
+                android:text="@string/question2"
                 android:textSize="14sp" />
 
             <CheckBox
@@ -127,7 +127,7 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Mata berkunang-kunang"
+                android:text="@string/question3"
                 android:layout_gravity="center"
                 android:layout_weight="1"
                 android:textSize="14sp"/>
@@ -176,7 +176,7 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Mudah mengantuk"
+                android:text="@string/question4"
                 android:layout_gravity="center"
                 android:layout_weight="1"
                 android:textSize="14sp"/>
@@ -224,7 +224,7 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Cepat capek"
+                android:text="@string/question5"
                 android:layout_gravity="center"
                 android:layout_weight="1"
                 android:textSize="14sp"/>
@@ -272,7 +272,7 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Sulit berkonsentrasi"
+                android:text="@string/question6"
                 android:layout_gravity="center"
                 android:layout_weight="1"
                 android:textSize="14sp"/>
@@ -320,7 +320,7 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Pucat pada muka"
+                android:text="@string/question7"
                 android:layout_gravity="center"
                 android:layout_weight="1"
                 android:textSize="14sp"/>
@@ -368,7 +368,7 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Pucat pada telapak tangan"
+                android:text="@string/question8"
                 android:layout_gravity="center"
                 android:layout_weight="1"
                 android:textSize="14sp"/>
@@ -416,7 +416,7 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Pucat pada kelopak mata"
+                android:text="@string/question9"
                 android:layout_gravity="center"
                 android:layout_weight="1"
                 android:textSize="14sp"/>
@@ -464,7 +464,7 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Pucat pada bibir"
+                android:text="@string/question10"
                 android:layout_gravity="center"
                 android:layout_weight="1"
                 android:textSize="14sp"/>
@@ -512,7 +512,7 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Pucat pada kulit"
+                android:text="@string/question11"
                 android:layout_gravity="center"
                 android:layout_weight="1"
                 android:textSize="14sp"/>
@@ -560,7 +560,7 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Pucat pada kuku"
+                android:text="@string/question12"
                 android:layout_gravity="center"
                 android:layout_weight="1"
                 android:textSize="14sp"/>
