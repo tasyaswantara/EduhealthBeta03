@@ -6,6 +6,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".RekamJejakActivity"
+    android:background="@color/white"
     >
     <LinearLayout
         android:id="@+id/rekamJejak_section1"
@@ -86,16 +87,14 @@
             android:textSize="12sp"
             tools:ignore="TextContrastCheck" />
     </LinearLayout>
-    <FrameLayout
-        android:id="@+id/rekamJejak_section3"
+    <androidx.viewpager2.widget.ViewPager2
+        android:id="@+id/viewPager"
         android:layout_below="@+id/rekamJejak_section2"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:layout_marginTop="30dp"
-        android:paddingHorizontal="20dp">
+        />
 
-
-    </FrameLayout>
 
 
 </RelativeLayout>

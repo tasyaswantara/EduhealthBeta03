@@ -70,5 +70,14 @@ public class HomeActivity extends AppCompatActivity {
             Intent i =new Intent(HomeActivity.this, RekamActivity.class);
             startActivity(i);
         });
+
+
     }
+
+    public void onBackPressed() {
+        super.onBackPressed();
+        finishAffinity(); // Menutup semua aktivitas di dalam tumpukan
+    }
+
+
 }
