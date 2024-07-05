@@ -9,6 +9,7 @@ import android.widget.LinearLayout;
 
 
 import androidx.activity.EdgeToEdge;
+import androidx.activity.OnBackPressedCallback;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.core.content.ContextCompat;
 import androidx.core.graphics.Insets;
@@ -71,13 +72,18 @@ public class HomeActivity extends AppCompatActivity {
             startActivity(i);
         });
 
+        OnBackPressedCallback callback = new OnBackPressedCallback(true) {
+            @Override
+            public void handleOnBackPressed() {
+                finishAffinity();
+            }
+        };
+        getOnBackPressedDispatcher().addCallback(this, callback);
+
 
     }
 
-    public void onBackPressed() {
-        super.onBackPressed();
-        finishAffinity(); // Menutup semua aktivitas di dalam tumpukan
-    }
+
 
 
 }
